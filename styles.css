@@ -74,7 +74,7 @@ section h2 {
 
 .skills span {
     display: inline-block; /* Muestra los elementos en línea con comportamiento de bloque */
-    background: #4caf50; /* Fondo verde para las etiquetas */
+    background: #ff0a0a; /* Fondo rojo para las etiquetas */
     color: #fff; /* Texto blanco para contraste */
     padding: 0.3rem 1rem; /* Espaciado interno de las etiquetas */
     margin: 0.3rem; /* Espaciado entre las etiquetas */
