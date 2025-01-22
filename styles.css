@@ -1,96 +1,116 @@
 * {
-    margin: 0; /* Elimina márgenes por defecto de todos los elementos */
-    padding: 0; /* Elimina relleno por defecto de todos los elementos */
-    box-sizing: border-box; /* Incluye márgenes y rellenos en el tamaño total del elemento */
-    font-family: Arial, sans-serif; /* Fuente predeterminada para todo el sitio */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: #121212; /* Fondo oscuro para el sitio */
-    color: #fff; /* Texto blanco para contraste */
-    line-height: 1.6; /* Mejora la legibilidad del texto */
-    display: flex; /* Configura un contenedor flexible */
-    flex-direction: column; /* Ordena los elementos de arriba hacia abajo */
-    align-items: center; /* Centra horizontalmente los elementos hijos */
+    background-color: #f4f4f9; /* Fondo más claro */
+    color: #333; /* Texto oscuro para mayor contraste */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 1rem;
 }
 
 header {
-    background-color: #1e1e1e; /* Fondo oscuro para el encabezado */
-    padding: 1rem; /* Espaciado interno del encabezado */
-    position: sticky; /* Mantiene el encabezado visible al desplazarse */
-    top: 0; /* Ancla el encabezado a la parte superior */
-    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
-    display: flex; /* Contenedor flexible para el encabezado */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
-    flex-direction: column; /* Organiza elementos en columna */
+    background-color: #4caf50; /* Verde más vibrante */
+    color: #fff;
+    padding: 2rem 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
-    font-size: 1.5rem; /* Tamaño del texto del título principal */
-    margin: 0.5rem 0; /* Espaciado arriba y abajo del título */
-    text-align: center; /* Centra el texto */
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 header p {
-    font-size: 1rem; /* Tamaño del subtítulo */
-    margin-bottom: 0.5rem; /* Espaciado debajo del subtítulo */
-    text-align: center; /* Centra el texto */
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 nav {
-    display: flex; /* Contenedor flexible para la navegación */
-    gap: 1rem; /* Espaciado entre los enlaces */
-    justify-content: center; /* Centra los enlaces horizontalmente */
-    margin-bottom: 1rem; /* Espaciado debajo del menú de navegación */
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
 nav a {
-    color: #4caf50; /* Color verde para los enlaces */
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    padding: 0.5rem 1rem; /* Espaciado interno para mayor área clicable */
-    border-radius: 5px; /* Bordes redondeados */
-    font-weight: bold; /* Texto en negrita */
-    transition: background-color 0.3s ease; /* Efecto de transición para el fondo */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #4caf50; /* Fondo verde al pasar el ratón */
-    color: #121212; /* Texto oscuro para contraste */
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-section {
-    padding: 2rem; /* Espaciado interno de las secciones */
-    max-width: 800px; /* Ancho máximo para limitar el contenido */
-    margin: auto; /* Centra horizontalmente las secciones */
-    text-align: center; /* Centra el contenido dentro de las secciones */
+.section-box {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-section h2 {
-    border-bottom: 2px solid #4caf50; /* Línea verde debajo del título */
-    margin-bottom: 1rem; /* Espaciado debajo del título */
-    padding-bottom: 0.5rem; /* Espaciado interno debajo del texto */
+.section-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4caf50;
+}
+
+.perfil-imagen {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .skills span {
-    display: inline-block; /* Muestra los elementos en línea con comportamiento de bloque */
-    background: #ff0a0a; /* Fondo rojo para las etiquetas */
-    color: #fff; /* Texto blanco para contraste */
-    padding: 0.3rem 1rem; /* Espaciado interno de las etiquetas */
-    margin: 0.3rem; /* Espaciado entre las etiquetas */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 0.9rem; /* Tamaño de fuente ligeramente reducido */
+    display: inline-block;
+    background: #4caf50;
+    color: #fff;
+    padding: 0.4rem 1rem;
+    margin: 0.3rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.skills span:hover {
+    transform: scale(1.1);
 }
 
 footer {
-    text-align: center; /* Centra el texto en el pie de página */
-    padding: 1rem; /* Espaciado interno del pie de página */
-    background-color: #1e1e1e; /* Fondo oscuro para el pie de página */
-    margin-top: 2rem; /* Espaciado superior para separarlo del contenido */
+    text-align: center;
+    padding: 1rem;
+    background-color: #4caf50;
+    color: #fff;
+    margin-top: 2rem;
+    width: 100%;
 }
 
 footer a {
-    color: #4caf50; /* Color verde para los enlaces en el pie de página */
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    font-weight: bold; /* Texto en negrita */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #f4f4f9;
 }

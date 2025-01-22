@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enrique Gómez - Currículum</title>
-    <!-- Vincula el archivo CSS externo para estilizar la página -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Encabezado principal con el título y navegación -->
     <header>
         <h1>Enrique Gómez</h1>
         <p>Desarrollador de Aplicaciones Web</p>
         <nav>
-            <!-- Navegación con enlaces ancla para desplazarse entre secciones -->
             <a href="#perfil">Perfil</a>
             <a href="#experiencia">Experiencia</a>
             <a href="#educacion">Educación</a>
@@ -22,27 +19,21 @@
         </nav>
     </header>
 
-    <!-- Sección de perfil con una descripción personal -->
-    <section id="perfil">
+    <section id="perfil" class="section-box">
         <h2>Perfil</h2>
-        <!-- Imagen de perfil con estilo de borde redondeado -->
-        <img src="1736967327255.png" alt="Foto de Enrique Gómez" style="max-width: 200px; border-radius: 50%;">
+        <img src="1736967327255.png" alt="Foto de Enrique Gómez" class="perfil-imagen">
         <p>Soy un desarrollador de aplicaciones web con experiencia en HTML, Java, JavaScript y PHP. Me apasiona buscar soluciones eficientes y visualmente atractivas para problemas complejos.</p>
     </section>
 
-    <!-- Sección de experiencia laboral -->
-    <section id="experiencia">
+    <section id="experiencia" class="section-box">
         <h2>Experiencia</h2>
-        <ul>
-            <li>
-                <strong>Mantenimiento de equipos informáticos en Granada</strong> (2021 - Presente)
-            </li>
-
-        </ul>
+        <article>
+            <h3>Mantenimiento de equipos informáticos en Granada</h3>
+            <p>(2021 - Presente)</p>
+        </article>
     </section>
 
-    <!-- Sección de educación -->
-    <section id="educacion">
+    <section id="educacion" class="section-box">
         <h2>Educación</h2>
         <ul>
             <li>
@@ -56,11 +47,9 @@
         </ul>
     </section>
 
-    <!-- Sección de habilidades técnicas -->
-    <section id="habilidades">
+    <section id="habilidades" class="section-box">
         <h2>Habilidades</h2>
         <div class="skills">
-            <!-- Lista de habilidades en formato de etiquetas -->
             <span>HTML</span>
             <span>Java</span>
             <span>JavaScript</span>
@@ -70,18 +59,27 @@
         </div>
     </section>
 
-    <!-- Sección de contacto con información personal -->
-    <section id="contacto">
+    <section id="contacto" class="section-box">
         <h2>Contacto</h2>
-        <p>Email: <a href="email">kigoiryt@gmail.com</a></p>
+        <p>Email: <a href="mailto:kigoiryt@gmail.com">kigoiryt@gmail.com</a></p>
         <p>Teléfono: +34 640 91 00 98</p>
         <p>LinkedIn: <a href="https://linkedin.com/in/enrique-gomez" target="_blank">linkedin.com/in/enrique-gomez</a></p>
     </section>
 
-    <!-- Pie de página con derechos reservados -->
     <footer>
         <p>© 2025 Enrique Gómez. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        // Suavizar el desplazamiento al hacer clic en los enlaces
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
-
