@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enrique Gómez - Currículum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,7 +26,7 @@
         <p>Soy un desarrollador de aplicaciones web con experiencia en HTML, Java, JavaScript y PHP. Me apasiona buscar soluciones eficientes y visualmente atractivas para problemas complejos.</p>
     </section>
 
-    <section id="experiencia" class="section-box">
+    <section id="experiencia" class="section-box card">
         <h2>Experiencia</h2>
         <article>
             <h3>Mantenimiento de equipos informáticos en Granada</h3>
@@ -47,7 +48,7 @@
         </ul>
     </section>
 
-    <section id="habilidades" class="section-box">
+    <section id="habilidades" class="section-box card">
         <h2>Habilidades</h2>
         <div class="skills">
             <span>HTML</span>
@@ -71,7 +72,6 @@
     </footer>
 
     <script>
-        // Suavizar el desplazamiento al hacer clic en los enlaces
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
