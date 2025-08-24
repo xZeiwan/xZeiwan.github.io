@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrique Gómez - Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <div class="container-blog">
+            <aside class="sidebar">
+                <img src="personal.png" class="avatar">
+                <h2>Enrique Gómez</h2>
+                <span class="role">Desarrollador Full Stack</span>
+                <div class="contact-info">
+                <hr class="separador-gris2">
+                    <div class="contact-item">
+                        <a href="contacto.html" title="Contacto">
+                            <img src="iconocorreoamarillo2.png" alt="Email" class="icon">
+                        </a>
+                        <span>egomeziruela@gmail.com</span>
+                    </div>
+                    <div class="contact-item2">
+                        <a href="https://share.google/ZKfzEYOSJGUt3xAyc" title="Granada" target="_blank">
+                            <img src="iconoubicacion.png" alt="Location" class="icon">
+                        </a>
+                        <span>Granada, España</span>
+                    </div>
+                </div>
+            </aside>
+            <div class="main-blog">
+                <div class="main-content">
+                    <div class="social-buttons">
+                        <a href="https://www.linkedin.com/in/enriquegi/" target="_blank" title="LinkedIn">
+                            <img src="linkedin32x32.png" alt="LinkedIn">
+                        </a>
+                        <a href="contacto.html" title="Formulario de contacto">
+                            <img src="mail.png" alt="Mail">
+                        </a>
+                    </div>
+                    <nav class="main-nav">
+                        <div class="nav-header">
+                            <h1 class="header-title typewriter">¡Hola mundo!</h1>
+                            <div class="nav-box">
+                                <ul>
+                                    <li class="nav-dropdown">
+                                        <a href="index.html">Inicio</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="index.html#sobremi">Sobre mí</a></li>
+                                            <li><a href="index.html#trayectoria">Trayectoria</a></li>
+                                            <li><a href="index.html#blog-portada">Portada</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="galeria.html" class="active">Galería</a></li>
+                                    <li><a href="#portfolio">Juegos</a></li>
+                                    <li><a href="contacto.html">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                    <main class="main-content blog-box">
+                        <section class="gallery-section">
+                            <h1 class="gallery-title">Álbum de fotos</h1>
+                            <div class="gallery-grid">
+                                <!-- Fila 1 -->
+                                <div class="gallery-item">
+                                    <img src="foto1.jpg" alt="...">
+                                    <div class="gallery-hover">
+                                        <span class="gallery-photo-title">...</span>
+                                        <span class="gallery-photo-date">...</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="foto2.jpg" alt="...">
+                                    <div class="gallery-hover">
+                                        <span class="gallery-photo-title">...</span>
+                                        <span class="gallery-photo-date">...</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="foto3.jpg" alt="...">
+                                    <div class="gallery-hover">
+                                        <span class="gallery-photo-title">...</span>
+                                        <span class="gallery-photo-date">...</span>
+                                    </div>
+                                </div>
+                                <!-- Fila 2 -->
+                                <div class="gallery-item">
+                                    <img src="foto4.jpg" alt="...">
+                                    <div class="gallery-hover">
+                                        <span class="gallery-photo-title">...</span>
+                                        <span class="gallery-photo-date">...</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="foto5.jpg" alt="...">
+                                    <div class="gallery-hover">
+                                        <span class="gallery-photo-title">...</span>
+                                        <span class="gallery-photo-date">...</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="foto6.jpg" alt="...">
+                                    <div class="gallery-hover">
+                                        <span class="gallery-photo-title">...</span>
+                                        <span class="gallery-photo-date">...</span>
+                                    </div>
+                                </div>
+                                <!-- Fila 3 -->
+                                <div class="gallery-item">
+                                    <img src="foto7.jpg" alt="...">
+                                    <div class="gallery-hover">
+                                        <span class="gallery-photo-title">...</span>
+                                        <span class="gallery-photo-date">...</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="foto8.jpg" alt="...">
+                                    <div class="gallery-hover">
+                                        <span class="gallery-photo-title">...</span>
+                                        <span class="gallery-photo-date">...</span>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="foto9.jpg" alt="...">
+                                    <div class="gallery-hover">
+                                        <span class="gallery-photo-title">...</span>
+                                        <span class="gallery-photo-date">...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </div>
+        <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                // Solo si es recarga manual (F5 o Ctrl+R)
+                if (performance.navigation.type === 1) {
+                    if (window.location.hash) {
+                        history.replaceState(null, '', window.location.pathname + window.location.search);
+                        window.scrollTo(0, 0);
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                    } else {
+                        window.scrollTo(0, 0);
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                    }
+                }
+                // Si es navegación normal, el navegador lleva al anclaje y no se fuerza el scroll
+            }, 10);
+        });
+        </script>
+    </body>
+<script src="fadeout.js"></script>
+<script src="degradadofondo.js"></script>
+</html>
